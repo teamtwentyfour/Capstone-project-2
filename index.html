@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
-		<section class="home-page">
+		<section class="home-page" id="home">
 			<!-- Home section -->
 			<nav class="nav">
 				<!-- Add the the below text to a list element  -->
@@ -39,10 +39,10 @@
 				</div>
 				<div class="navbar sidebar">
 					<ul class="order">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#home">About</a></li>
+						<li><a href="#service">Services</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -58,7 +58,7 @@
 			</div>
 		</section>
 
-		<section class="grid-page">
+		<section class="grid-page" id="service">
 			<!-- Css Grid section -->
 
 			<div class="container-grid">
@@ -112,18 +112,20 @@
 				</div>
 			</div>
 		</section>
-		<section>
+		<section class="section4" id="testimonials">
 			<!-- Client testimonials section -->
-			<h1>Client testimonials</h1>
+			<br><br>
+			<center><h1>Client testimonials</h1></center>
 			<div class="container-flex">
 				<div class="box-flex">
 					<img src="./images/image-emily.jpg" alt="emily" />
+					<br><br>
 					<p>
 						We put our trust in Sunnyside and they
 						delivered, making sure our needs were met and
 						deadlines were always hit.
 					</p>
-
+                    <br><br>
 						<b>Emily R.</b>
 						<span>Marketing Director</span>
 				</div>
@@ -132,22 +134,25 @@
 						src="./images/image-thomas.jpg"
 						alt="thomas"
 					/>
+					<br><br>
 					<p>
 						Sunnyside’s enthusiasm coupled with their keen
 						interest in our brand’s success made it a
 						satisfying and enjoyable experience.
 					</p>
-
+                   <br><br>
 					<b> Thomas S.</b>
 					<span>Chief Operating Officer</span>
 				</div>
 				<div class="box-flex">
 					<img src="./images/image-jennie.jpg" alt="" />
+					<br><br>
 					<p>
 						Incredible end result! Our sales increased over
 						400% when we worked with Sunnyside. Highly
 						recommended!
 					</p>
+					<br><br>
 					<b> Jennie F. </b>
 					<span> Business Owner</span>
 				</div>
@@ -155,13 +160,27 @@
 
 			<!-- Image section -->
 		</section>
-		<footer>About Services Projects Contact</footer>
+		<section id='projects'>
+		  <div class="image_container">
+		  <div class="image_box"></div>
+		  <div class="image_box"></div>
+		  <div class="image_box"></div>
+		  <div class="image_box"></div>
+		  </div>
+		
+		</section>
+		<section id='contact'>
+		<center>
+			<ul class="orders">
+						<li><a href="#home">About</a></li>
+						<li><a href="#service">Services</a></li>
+						<li><a href="#projects">Projects</a></li>
+					</ul>
 
-		<!-- <center> <p>hello world</p></center>
-
-<center> <button>click</button></center>
-
- -->
+        <img src="./images/icon-facebook.svg" alt="">
+		<img src="./images/icon-instagram.svg" alt="">
+		<img src="./images/icon-twitter.svg" alt="">
+		<img src="./images/icon-pinterest.svg" alt="">
 
 		<div class="attribution">
 			Challenge by
@@ -171,6 +190,10 @@
 				>Frontend Mentor</a
 			>. Coded by <a href="#">Your Name Here</a>.
 		</div>
+		</center>
+		
+		</section i>
+
 		<script src="app.js"></script>
 	</body>
 </html>
