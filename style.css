@@ -65,11 +65,10 @@ section {
 	}
 }
 
-
 @media only screen and (max-width: 425px) {
 	/*Small smartphones [325px -> 425px]*/
 	.sidebar {
-		display:none;
+		display: none;
 		position: absolute;
 		top: 93px;
 		left: 15px;
@@ -117,6 +116,13 @@ li a {
 li a:hover {
 	color: #111;
 	background-color: rgba(255, 255, 255, 0.788);
+}
+@media only screen and (max-width: 425px) {
+	/*Small smartphones [325px -> 425px]*/
+	li a:hover {
+	color: #111;
+	background-color: rgba(241, 207, 11, 0.788);
+}
 }
 .home-content {
 	display: flex;
@@ -210,12 +216,11 @@ li a:hover {
 @media only screen and (max-width: 425px) {
 	/*Small smartphones [325px -> 425px]*/
 	.grid-row p {
-	margin-bottom: 25px;
-	width: 450px;
-	font-size: 18px;
-	font-weight: 100;
-
-}
+		margin-bottom: 25px;
+		width: 450px;
+		font-size: 18px;
+		font-weight: 100;
+	}
 }
 @media only screen and (max-width: 425px) {
 	.grid-row p {
@@ -274,8 +279,7 @@ li a:hover {
 	/*Small smartphones [325px -> 425px]*/
 	.grid-row:nth-child(3) {
 		background-image: url('./images/mobile/image-stand-out.jpg');
-				background-size: contain;
-
+		background-size: contain;
 	}
 }
 .grid-row:nth-child(4) {
@@ -293,8 +297,7 @@ li a:hover {
 	/*Small smartphones [325px -> 425px]*/
 	.grid-row:nth-child(5) {
 		background-image: url('./images/mobile/image-graphic-design.jpg');
-				background-size: cover;
-
+		background-size: cover;
 	}
 }
 .grid-row:nth-child(6) {
@@ -304,7 +307,6 @@ li a:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url('./images/desktop/image-photography.jpg');
-	
 }
 @media only screen and (max-width: 425px) {
 	/*Small smartphones [325px -> 425px]*/
@@ -321,34 +323,154 @@ li a:hover {
 }
 @media only screen and (max-width: 425px) {
 	/*Small smartphones [325px -> 425px]*/
-	.container-flex{
+	.container-flex {
 		flex-direction: column;
 	}
 }
-.box-flex {
-	margin: 10px;
-	width: 400px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.box-flex p{
+	font-size:18px;
+	font-family: inherit;
+	text-align:center;
+}
+.box-flex b{
+	font-size:19px;
+	font-weight: 700;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.section4 h1{
+	text-transform: uppercase;
+	letter-spacing:8px;
+	color:rgb(124, 123, 123);
+	font-size:33px;
+	font-weight: 900;
+	font-family: 'Fraunces', serif;
 }
 @media only screen and (max-width: 425px) {
 	/*Small smartphones [325px -> 425px]*/
+.section4 h1{
+	letter-spacing:3px;
+	font-size:20px;
+}
+}
+#projects{
+	height:62vh;
+
+}
+@media only screen and (max-width: 425px) {
+	/*Small smartphones [325px -> 425px]*/
+#projects{
+	height:59vh;
+
+}
+}
 .box-flex {
-    margin: 10px;
-    width: 249px;
+    margin: 55px;
+    width: 321px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 26px 3px;
 }
+@media only screen and (max-width: 425px) {
+	/*Small smartphones [325px -> 425px]*/
+	.box-flex {
+		margin: 10px;
+		width: 249px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 26px 3px;
+	}
 }
 .box-flex img {
 	width: 100px;
 	border-radius: 50%;
 }
-.container-flex h1{
+.container-flex h1 {
 	text-align: center;
+}
+.section4 {
+	height: 55vh;
+	background-color: rgb(241, 240, 240);
+}
+@media only screen and (max-width: 425px) {
+	/*Small smartphones [325px -> 425px]*/
+	.section4 {
+		height: 100%;
+	}
+}
+.image_container{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 0;
+}
+.image_box{
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+
+}
+@media only screen and (max-width: 425px) {
+	/*Small smartphones [325px -> 425px]*/
+.image_box{
+	height: 197px;
+
+}
+}
+.image_box:nth-child(1){
+	background-image: url('./images/desktop/image-gallery-milkbottles.jpg');
+
+}
+.image_box:nth-child(2){
+	background-image: url('./images/desktop/image-gallery-orange.jpg');
+}
+.image_box:nth-child(4){
+	background-image: url('./images/desktop/image-gallery-sugarcubes.jpg')
+	
+}
+.image_box:nth-child(3){
+	background-image: url('./images/desktop/image-gallery-cone.jpg')
+	
+}
+@media only screen and (max-width: 425px) {
+	/*Small smartphones [325px -> 425px]*/
+	.image_box:nth-child(1){
+	background-image: url('./images/mobile/image-gallery-milkbottles.jpg');
+
+}
+.image_box:nth-child(2){
+	background-image: url('./images/mobile/image-gallery-orange.jpg');
+}
+.image_box:nth-child(4){
+	background-image: url('./images/mobile/image-gallery-sugar-cubes.jpg');
+	
+}
+.image_box:nth-child(3){
+	background-image: url('./images/mobile/image-gallery-cone.jpg');
+	
+}
+}
+@media only screen and (max-width: 425px) {
+	/*Small smartphones [325px -> 425px]*/
+.image_container {
+    grid-template-columns: repeat(2,1fr);
+}
+}
+#contact{
+	height:30%;
+	background-color:#90d4c6;
+}
+#contact a{
+	color:#067c65;
+
+}
+.orders {
+	padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact img {
+	padding: 20px 20px;
 }
