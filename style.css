@@ -68,22 +68,15 @@ section {
 @media only screen and (max-width: 425px) {
 	/*Small smartphones [325px -> 425px]*/
 	.sidebar {
-		display: none;
-		position: absolute;
-		top: 93px;
-		left: 15px;
-		background-color: #fffbfb;
-		width: 318px;
-		height: 361px;
-		clip-path: polygon(
-			0 12%,
-			88% 11%,
-			100% 0,
-			100% 50%,
-			100% 100%,
-			0 100%
-		);
-	}
+    display: none;
+    position: absolute;
+    top: 92px;
+    left: 17px;
+    background-color: #fffbfb;
+    width: 341px;
+    height: 361px;
+    clip-path: polygon( 0 12%, 88% 11%, 100% 0, 100% 50%, 100% 100%, 0 100% );
+}
 	.order {
 		margin-top: 108px;
 		display: flex;
@@ -458,19 +451,23 @@ li a:hover {
 }
 }
 #contact{
-	height:30%;
-	background-color:#90d4c6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -40px;
+    height: 50vh;
+    background-color: #90d4c6;
 }
-#contact a{
+#contact li a{
 	color:#067c65;
-
 }
+
 .orders {
-	padding: 40px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #contact img {
-	padding: 20px 20px;
+	padding: 10px 20px;
+	margin-bottom: 30px;
 }
